@@ -28,7 +28,7 @@ export class BackgroundController {
 
     RunningGameService.instance.addGameRunningChangedListener((isGameRunning) => {
       if (isGameRunning) {
-        console.log('restoring in game window');
+        // console.log('restoring in game window');
         // WindowsService.instance.restore(WindowNames.LEADERBOARD);
       } else {
         // windowsService.minimize(WindowNames.LEADERBOARD);
@@ -39,6 +39,8 @@ export class BackgroundController {
     
     let mainWindow = overwolf.windows.getMainWindow();
     (<any>mainWindow).ow_eventBus.addListener(BackgroundController._eventListener);
+    
+    NotificationsService.instance.notify('PUBG Dead Legends is running');
   }
 
   private static async _eventListener(eventName: string, data: any) {
