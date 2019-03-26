@@ -80,16 +80,16 @@
         "is_background_page": false,
         "in_game_only": true,
         "size": {
-          "width": 180,
+          "width": 200,
           "height": 250
         },
         "min_size": {
-          "width": 180,
+          "width": 200,
           "height": 250
         },
         "start_position": {
-          "top": 400,
-          "left": 400
+          "top": 10,
+          "left": 10
         }
       },
       "notification": {

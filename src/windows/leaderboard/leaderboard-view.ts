@@ -35,8 +35,9 @@ export class LeaderboardView {
 
   private async _setWindowPosition() {
 		const gameInfo = await RunningGameService.instance.getInfo();
-		const bottom = gameInfo.height + window.innerHeight + 100;
-    WindowsService.instance.changePosition(WindowNames.LEADERBOARD, 20, bottom);
+		const bottom = gameInfo.height - 300;
+		console.log(bottom)
+    WindowsService.instance.changePosition(WindowNames.LEADERBOARD, 30, bottom);
   }
 
 	private static _onCloseClicked() {

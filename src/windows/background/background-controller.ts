@@ -29,7 +29,7 @@ export class BackgroundController {
     RunningGameService.instance.addGameRunningChangedListener((isGameRunning) => {
       if (isGameRunning) {
         // console.log('restoring in game window');
-        // WindowsService.instance.restore(WindowNames.LEADERBOARD);
+        WindowsService.instance.restore(WindowNames.LEADERBOARD);
       } else {
         // windowsService.minimize(WindowNames.LEADERBOARD);
         console.log('closing app after game closed');
