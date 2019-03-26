@@ -1,7 +1,7 @@
 {
-  "name": "pubg-dev-challenge-sample-typescript",
+  "name": "ow-pubg-dead-legends",
   "version": "1.0.0",
-  "description": "PUBG dev challenge sample app written in TypeScript",
+  "description": "Overwolf PUBG Dead Legends",
   "main": "./dist/main.js",
   "scripts": {
     "start": "npm run-script build",
@@ -9,7 +9,7 @@
     "build": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Overwolf",
+  "author": "statickidz",
   "license": "MIT",
   "devDependencies": {
     "browserify": "^16.2.3",
